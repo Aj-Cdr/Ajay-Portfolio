@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Ajay Sathish Preetha - Portfolio</title>
+  <meta name="description"
+    content="Hi, I'm Ajay and I'm excited to share my portfolio with you. It's a collection of my work and accomplishments, which I hope will give you a better understanding of who I am and what I can offer.">
+  <meta name="author" content="Ajay Sathish Preetha">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/assets/css/fontawesome-all.min.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="./images/icon.png">
+
+  <!-- Scripts & CDNs -->
+  <script src="JS/github-gallery.js"></script>
+  <script src="./particles.js" lang="text/javascript"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body background-color="#fff" style="overflow-y: hidden;">
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div id="main-intro" class="one-half column" style="margin-top: 25%; position: absolute;">
+        <h1><a style="text-decoration: none; color: black;"><strong id="hello">Hello!</strong></a>
+        </h1>
+        <h1 style="margin-top: -7%;"><a style="text-decoration: none; color: black;"><strong id="and">and</strong></a>
+        </h1>
+        <h1 style="margin-top: -7%;"><a style="text-decoration: none; color: black;"><strong id="name">I'm
+              Ajay</strong></a></h1>
+        <h1><span><a class="fab fa-github" href="https://github.com/Aj-Cdr" target="_blank" id="github"
+              style="color:black; text-decoration: none;"></a> <a class="fab fa-blogger-b" id="hashnode_blog"
+              style="color:black; text-decoration: none;" target="_blank" href="https://retro.hashnode.dev/"></a> <a
+              class="fab fa-discord" target="_blank" href="https://discordid.netlify.app/?id=805285908563755038"
+              id="discord" style="color:black; text-decoration: none;"></a> <a class="fab fa-linkedin"
+              href="https://www.linkedin.com/in/ajay-sathish-preetha/" id="linkedin"
+              style="color:black; text-decoration: none;" target="_blank"></a></span>
+        </h1>
+      </div>
+    </div>
+  </div>
+
+  <!--End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <script>
+
+    window.onload = function () {
+      var userAgent = navigator.userAgent.toLowerCase();
+
+      // Check if the user agent string contains any mobile or tablet keywords
+      var isMobile = /mobile|tablet|ip(ad|hone|od)|android|webos|blackberry|iemobile|opera mini/i.test(userAgent);
+
+      if (isMobile) {
+        // Redirect or display a message for mobile users
+        document.getElementById("main-intro").style.marginTop = "50%"
+      }
+    }
+
+    // code for animation and graphics for the intro of the website.
+
+    const github = document.getElementById("github")
+    github.addEventListener("mouseover", () => {
+      github.className = "fab fa-github animate__animated animate__headShake animate_slower"
+      github.style.color = "orange"
+    })
+
+    github.addEventListener("mouseleave", () => {
+      github.className = "fab fa-github"
+      github.style.color = "black"
+    })
+
+    const blog = document.getElementById("hashnode_blog")
+    blog.addEventListener("mouseover", () => {
+      blog.className = "fab fa-blogger-b animate__animated animate__headShake animate_slower"
+      blog.style.color = "orange"
+    })
+
+    blog.addEventListener("mouseleave", () => {
+      blog.className = "fab fa-blogger-b"
+      blog.style.color = "black"
+    })
+
+    const discord = document.getElementById("discord")
+    discord.addEventListener("mouseover", () => {
+      discord.className = "fab fa-discord animate__animated animate__headShake animate_slower"
+      discord.style.color = "orange"
+    })
+
+    discord.addEventListener("mouseleave", () => {
+      discord.className = "fab fa-discord"
+      discord.style.color = "black"
+    })
+
+    const linkedin = document.getElementById("linkedin")
+    linkedin.addEventListener("mouseover", () => {
+      linkedin.className = "fab fa-linkedin animate__animated animate__headShake animate_slower"
+      linkedin.style.color = "orange"
+    })
+
+    linkedin.addEventListener("mouseleave", () => {
+      linkedin.className = "fab fa-linkedin"
+      linkedin.style.color = "black"
+    })
+
+  </script>
+</body>
+
+</html>
